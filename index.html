@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <style>
+        /* Background image for the entire page */
+        body {
+            background-image: url('silkbackground.png'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            height: 100vh; /* Make sure the background image covers the whole page */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Ensures content starts at the top */
+            align-items: center;
+        }
+
+        /* Styling for the top image */
+        #top-image {
+            width: 80%; /* You can adjust the width */
+            height: auto;
+            margin-top: 50px;
+        }
+
+        /* Center image styling */
+        #center-image {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centers the image */
+            width: 400px; /* Adjust width as needed */
+            height: auto;
+            margin-top: 70px;
+            transition: opacity 0.3s ease;
+        }
+
+        #center-image:hover {
+            content: url('mockupnolid.png');
+        }
+
+        #one {
+            position: absolute;
+            right: 45%; /* Move the image to the right */
+            top: 90%; /* Vertically center it on the page */
+            transform: translateY(-50%, -50%); /* Fine-tune the vertical centering */
+            width: 120px; /* Adjust width as needed */
+            height: auto;
+            cursor: pointer; /* Show pointer cursor on hover */
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Image at the top -->
+    <img id="top-image" src="luxury.png" alt="Top Image">
+
+    <!-- Image centered in the middle -->
+    <img id="center-image" src="mockuplid.png" alt="Center Image">
+
+    <a href="jasmine.html"> <!-- Replace with your desired link -->
+        <img id="one" src="buynow.png">
+    </a>
+</body>
+</html>

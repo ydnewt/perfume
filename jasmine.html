@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine</title>
+    <style>
+        body {
+            background-color: #9fba4f; /* Hex color code for blue */
+            margin: 0;
+            height: 100vh; /* Ensures the background covers the full height of the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; /* Text color for contrast */
+            font-family: Arial, sans-serif;
+        }
+
+        .image-row {
+            display: flex; /* Align images in a row horizontally */
+            gap: 40px; /* Space between images */
+        }
+
+        img {
+            width: 300px; /* Set the width of the images */
+            height: auto; /* Maintain image aspect ratio */
+            transition: transform 0.5s ease, opacity 5s ease;
+            transform-origin: center;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Apply spin animation on hover */
+        .image-1:hover, .image-2:hover, .image-3:hover {
+            animation: spin 8s linear infinite; /* Spins continuously */
+        }
+
+        .image-1:hover {
+            content: url('image1text.png'); /* New image for Image 1 */
+        }
+
+        .image-3:hover {
+            content: url('image3text.png'); /* New image for Image 3 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-row">
+        <!-- Three images in one row -->
+        <img class="image-1" src="flower.png" alt="Image 1">
+
+        <a href="night.html">
+            <img class="image-2" src="flower.png" alt="Image 2">
+        </a>
+    
+        <img class="image-3" src="flower.png" alt="Image 3">
+    </div>
+
+</body>
+</html>

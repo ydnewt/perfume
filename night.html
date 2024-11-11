@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Images at the Bottom</title>
+    <style>
+        body {
+            background-color: #3498db; /* Solid background color */
+            margin: 0;
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Image at the bottom of the page using fixed positioning */
+        .bottom-image {
+            position: fixed; /* Fixed position relative to the viewport */
+            bottom: 0; /* Aligns the image to the bottom */
+            left: 0; /* Aligns the image to the left */
+            width: 100%; /* Make the image fill the entire width of the viewport */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        /* Image right above the bottom image */
+        .above-bottom-image {
+            position: fixed; /* Fixed position at the top */
+            top: 12%; /* Aligns the image to the top */
+            left: 50%; /* Centers the image horizontally */
+            transform: translateX(-50%); /* Adjusts the position back to perfectly center */
+            width: 1150px; /* Width of the image */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        .bottom-right-image {
+            position: fixed; /* Fixed position relative to the viewport */
+            bottom: 30px; /* 20px from the bottom */
+            right: 30px; /* 20px from the right */
+            width: 300px; /* Width of the image */
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Image right above the bottom image -->
+    <img class="bottom-image" src="py.png" alt="Bottom Image">
+
+    <img class="above-bottom-image" src="pytext.png">
+
+    <a href="labour.html">
+        <img class="bottom-right-image" src="camel.png" alt="Bottom Right Image">
+    </a>
+
+</body>
+</html>
